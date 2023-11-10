@@ -5,13 +5,14 @@
 Introducing a modular and functional Unity Main Menu made with UI Toolkit, accompanied by a sample scene. Easily expandable and customizable, this project is born from reverse engineering the UI Toolkit Sample – Dragon Crashers by Unity Technologies. Every script has been written from the ground up, following the workflow that Unity Technologies introduced in their sample project. Feel free to use it however you like and contact me if you have any questions.
 
 ## Features
+![Movie_002](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/9be4058c-b08c-4a59-b8cb-57847869971b)
+![Movie_003](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/69304a66-39bf-4244-9c7b-92c4be72fe45)
+![Movie_004](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/2f7cb08c-3928-4c7b-9bb3-b6bf102d4a4f)
+![Movie_005](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/f95ec9e0-7660-4efb-900b-1cc39b51e6b5)
+![Screenshot_3](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/fef65f03-c588-43ea-9264-d93851f01bbe)
+![Screenshot_2](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/3cb11a6b-8557-4f46-986c-f383cbdd46d9)
+![Screenshot_5](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/7d7285c3-12cc-4496-88c9-e4765bef0c41)
 
-![Movie_002](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/d6865384-a4d1-475a-9743-a89b2531d150)
-![Movie_003](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/a785dd64-7e82-4134-96db-9eed4a92dee6)
-![Movie_004](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/45b03841-c076-4ea8-96fb-c42012ef6d26)
-![Movie_005](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/605c9bf4-08a1-4dab-b336-bcf2fc28f878)
-![Screenshot_2](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/1ae9925c-460e-4e3e-a1c4-d996ac1b3367) 
-![Screenshot_3](https://github.com/Dezikso/MainMenu-UIToolkit-Template/assets/74025300/1bbac541-3424-4161-8a78-2c837a522a37)
 
 ## Compatibility
 
