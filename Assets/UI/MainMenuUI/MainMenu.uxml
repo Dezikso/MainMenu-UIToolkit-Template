@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuUI/MainMenuStyles/MainMenu_Buttons.uss?fileID=7433441132597879392&amp;guid=4276a3237c1ec5d45801852437106e5a&amp;type=3#MainMenu_Buttons" />
+    <Style src="project://database/Assets/UI/MainMenuUI/MainMenuStyles/MainMenu_Containers.uss?fileID=7433441132597879392&amp;guid=5ccb4175876e6394bbc53968c9dba08b&amp;type=3#MainMenu_Containers" />
+    <Style src="project://database/Assets/UI/MainMenuUI/MainMenuStyles/Default_Overwrite.uss?fileID=7433441132597879392&amp;guid=a88b27413bc51574caed3d8e0401cef5&amp;type=3#Default_Overwrite" />
+    <ui:VisualElement name="Menu" style="flex-grow: 1; flex-direction: row; flex-basis: auto; flex-wrap: wrap-reverse; align-self: auto; align-items: stretch;">
+        <ui:VisualElement name="MenuBar" style="width: 25%; height: 100%; margin-left: 5%; background-color: rgba(8, 16, 17, 0.59); flex-direction: column; align-items: center; justify-content: flex-start; align-self: auto; display: flex;">
+            <ui:VisualElement name="GameLogo" style="align-items: center; background-image: url(&apos;project://database/Assets/Images/Sample_Logo.png?fileID=2800000&amp;guid=c2be85212c6dd0a4abb903bc717d00da&amp;type=3#Sample_Logo&apos;); -unity-background-scale-mode: stretch-to-fill; flex-grow: 0; width: 80%; height: 15%; margin-top: 10%;" />
+            <ui:VisualElement name="menu_button-group" style="flex-grow: 1; align-items: center; justify-content: flex-end; align-self: center; width: 100%; flex-direction: column; padding-bottom: 10%; padding-right: 5%; padding-left: 5%;">
+                <ui:Button text="START" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu_bar-start-button" class="menu-bar-button" />
+                <ui:Button text="SETTINGS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu_bar-settings-button" class="menu-bar-button" />
+                <ui:Button text="CREDITS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu_bar-credits-button" class="menu-bar-button" />
+                <ui:Button text="QUIT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu_bar-quit-button" class="menu-bar-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsBar" style="width: auto; height: auto; flex-grow: 1; background-color: rgba(8, 16, 17, 0.78); margin-top: 3%; flex-direction: column; margin-right: 3%; margin-bottom: 3%; margin-left: 3%; display: none; justify-content: flex-start; visibility: visible; border-top-left-radius: 1%; border-top-right-radius: 1%; border-bottom-right-radius: 1%; border-bottom-left-radius: 1%;">
+            <ui:VisualElement name="settings_bar-button-group" style="flex-grow: 0; height: 10%; flex-direction: row; justify-content: center; align-items: flex-start; align-self: auto; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                <ui:Button text="GAME" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-game-button" class="menu-settings-button" />
+                <ui:Button text="AUDIO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-audio-button" class="menu-settings-button" />
+                <ui:Button text="VIDEO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-video-button" class="menu-settings-button" />
+                <ui:Button text="CONTROLLS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-controls-button" class="menu-settings-button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SettingsScreens" style="flex-direction: column-reverse; flex-grow: 1; display: flex;">
+                <ui:VisualElement name="settings-game-screen" class="menu-settings-screen" style="display: none;">
+                    <ui:VisualElement name="container_visual_indicator" style="flex-grow: 1; position: absolute; width: 20%; height: 7%; top: -9.5%; background-color: rgba(0, 0, 0, 0.2); left: 2.5%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:Toggle label="Example Toggle 1" name="settings-game-toggle1" class="menu-settings-setting_field" />
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-audio-screen" class="menu-settings-screen" style="flex-grow: 1; display: none;">
+                    <ui:VisualElement name="container_visual_indicator" style="flex-grow: 1; position: absolute; width: 20%; height: 7%; top: -9.5%; background-color: rgba(0, 0, 0, 0.2); left: 27.5%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:Slider picking-mode="Ignore" label="Example Slider 1" value="50" high-value="100" name="settings-audio-slider1" class="menu-settings-setting_field">
+                        <ui:Label tabindex="-1" text="50%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-audio-slider1-value_label" />
+                    </ui:Slider>
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-video-screen" class="menu-settings-screen" style="flex-grow: 1; display: none;">
+                    <ui:VisualElement name="container_visual_indicator" style="flex-grow: 1; position: absolute; width: 20%; height: 7%; top: -9.5%; background-color: rgba(0, 0, 0, 0.2); left: 52.5%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:DropdownField label="Dropdown 1" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="settings-video-dropdown1" class="menu-settings-setting_field" />
+                    <ui:DropdownField label="Dropdown 2" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="settings-video-dropdown2" class="menu-settings-setting_field" style="display: flex;" />
+                    <ui:DropdownField label="Dropdown 3" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="settings-video-dropdown3" class="menu-settings-setting_field" />
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-controls-screen" class="menu-settings-screen" style="flex-grow: 1; display: none;">
+                    <ui:VisualElement name="container_visual_indicator" style="flex-grow: 1; position: absolute; width: 20%; height: 7%; top: -9.5%; background-color: rgba(0, 0, 0, 0.2); left: 77.5%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+                    <ui:VisualElement name="settings-controls-remap1" class="menu-settings-setting_field" style="justify-content: space-between; align-items: auto;">
+                        <ui:Label tabindex="-1" text="Example Button 1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:Button text="Key 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-controls-remap1-button" style="align-items: auto; background-color: rgba(0, 0, 0, 0.71); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CreditsBar" style="width: auto; height: auto; flex-grow: 1; background-color: rgba(8, 16, 17, 0.78); margin-top: 3%; flex-direction: column; margin-right: 3%; margin-bottom: 3%; margin-left: 3%; display: none; justify-content: flex-start; visibility: visible; border-top-left-radius: 1%; border-top-right-radius: 1%; border-bottom-right-radius: 1%; border-bottom-left-radius: 1%;">
+            <ui:Label tabindex="-1" text="CREDITS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" style="-unity-text-align: upper-center; color: rgb(195, 195, 195); font-size: 42px;" />
+            <ui:Label tabindex="-1" text="Made by Dezikso&#10;&#10;Liked the project? You can find me on GitHub:&#10;github.com/Dezikso" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CreditsText" style="flex-grow: 1; color: rgb(195, 195, 195); -unity-text-align: upper-center; font-size: 36px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
